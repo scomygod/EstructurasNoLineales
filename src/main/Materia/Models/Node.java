@@ -3,8 +3,8 @@ package main.Materia.Models;
 public class Node {
 
     private int value;
-    private Node left;
-    private Node right;
+    public Node left;
+    public Node right;
 
     //Constructor
     public Node(int value) {
