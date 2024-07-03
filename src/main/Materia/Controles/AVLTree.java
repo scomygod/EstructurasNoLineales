@@ -72,7 +72,7 @@ public class AVLTree {
     }
 
     private Node rightRotate (Node nodeR){
-        System.out.println("Right Rotate on: " + nodeR.getValue() + "Balance " + getBalance(nodeR));
+        System.out.println("Right Rotate on: " + nodeR.getValue() + " Balance " + getBalance(nodeR));
         Node x = nodeR.getLeft();
         System.out.println("New root after right rotate :" + x.getValue());
         Node temp = x.getRight();
@@ -90,7 +90,7 @@ public class AVLTree {
     }
     
     private Node leftRotate (Node nodeL){
-        System.out.println("Left Rotate on: " + nodeL.getValue() + "Balance " + getBalance(nodeL));
+        System.out.println("Left Rotate on: " + nodeL.getValue() + " Balance " + getBalance(nodeL));
         Node y = nodeL.getRight();
         System.out.println("New root after left rotate :" + y.getValue());
         Node temp = y.getLeft();
